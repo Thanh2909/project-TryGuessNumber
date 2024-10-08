@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/library_test.dir/test-game-library.cpp.o" -o library_test  /usr/lib/x86_64-linux-gnu/libgtest_main.a -lpthread /usr/lib/x86_64-linux-gnu/libgtest.a 

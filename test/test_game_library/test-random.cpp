@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../data_library/src/random.h"  // Ensure the path is correct for your project
+#include "../../data_library/src/random.h"  
 
 // Test to check if the generated random number is within the valid range
 TEST(MyRandomNamespaceTest, UniformIntInRange) {

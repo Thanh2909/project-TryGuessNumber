@@ -1,0 +1,62 @@
+Start testing: Oct 08 01:42 UTC
+----------------------------------------------------------
+1/2 Testing: RunTestsMyRandom
+1/2 Test: RunTestsMyRandom
+Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/random_test"
+Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
+"RunTestsMyRandom" start time: Oct 08 01:42 UTC
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from MyRandomNamespaceTest
+[ RUN      ] MyRandomNamespaceTest.UniformIntInRange
+[       OK ] MyRandomNamespaceTest.UniformIntInRange (0 ms)
+[ RUN      ] MyRandomNamespaceTest.NormalDistributionMean
+[       OK ] MyRandomNamespaceTest.NormalDistributionMean (4 ms)
+[ RUN      ] MyRandomNamespaceTest.NormalDistributionStdDev
+[       OK ] MyRandomNamespaceTest.NormalDistributionStdDev (5 ms)
+[----------] 3 tests from MyRandomNamespaceTest (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (10 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"RunTestsMyRandom" end time: Oct 08 01:42 UTC
+"RunTestsMyRandom" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: RunTestsGameLibrary
+2/2 Test: RunTestsGameLibrary
+Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/library_test"
+Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
+"RunTestsGameLibrary" start time: Oct 08 01:42 UTC
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from GameLibraryTest
+[ RUN      ] GameLibraryTest.GenerateSecretNumberTest
+[       OK ] GameLibraryTest.GenerateSecretNumberTest (0 ms)
+[ RUN      ] GameLibraryTest.IsCorrectGuessTest
+[       OK ] GameLibraryTest.IsCorrectGuessTest (0 ms)
+[ RUN      ] GameLibraryTest.RecordAndAverageAttemptsTest
+[       OK ] GameLibraryTest.RecordAndAverageAttemptsTest (0 ms)
+[----------] 3 tests from GameLibraryTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"RunTestsGameLibrary" end time: Oct 08 01:42 UTC
+"RunTestsGameLibrary" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 08 01:42 UTC

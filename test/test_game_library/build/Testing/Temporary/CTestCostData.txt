@@ -1,0 +1,3 @@
+RunTestsMyRandom 1 0.0496854
+RunTestsGameLibrary 1 0.0227998
+---
