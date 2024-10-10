@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named game_library
+
+# Build rule for target.
+game_library: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game_library
+.PHONY : game_library
+
+# fast build rule for target.
+game_library/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/build
+.PHONY : game_library/fast
+
+#=============================================================================
 # Target rules for targets named randomTS
 
 # Build rule for target.
@@ -138,6 +151,30 @@ randomTS: cmake_check_build_system
 randomTS/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomTS.dir/build.make CMakeFiles/randomTS.dir/build
 .PHONY : randomTS/fast
+
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.o: home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.o
+
+# target to build an object file
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o
+
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.i: home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.i
+
+# target to preprocess a source file
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i
+
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.s: home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.s
+
+# target to generate assembly for a file
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s
 
 home/thanhnguyem/project-TryGuessNumber/data_library/src/random.o: home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp.o
 .PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/random.o
@@ -163,6 +200,30 @@ home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomTS.dir/build.make CMakeFiles/randomTS.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp.s
 .PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp.s
 
+test_library.o: test_library.cpp.o
+.PHONY : test_library.o
+
+# target to build an object file
+test_library.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/test_library.cpp.o
+.PHONY : test_library.cpp.o
+
+test_library.i: test_library.cpp.i
+.PHONY : test_library.i
+
+# target to preprocess a source file
+test_library.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/test_library.cpp.i
+.PHONY : test_library.cpp.i
+
+test_library.s: test_library.cpp.s
+.PHONY : test_library.s
+
+# target to generate assembly for a file
+test_library.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/test_library.cpp.s
+.PHONY : test_library.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -172,10 +233,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... game_library"
 	@echo "... randomTS"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.o"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.i"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.s"
 	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/random.o"
 	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/random.i"
 	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/random.s"
+	@echo "... test_library.o"
+	@echo "... test_library.i"
+	@echo "... test_library.s"
 .PHONY : help
 
 

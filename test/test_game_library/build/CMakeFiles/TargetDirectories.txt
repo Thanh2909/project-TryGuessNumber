@@ -1,3 +1,4 @@
+/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles/game_library.dir
 /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles/randomTS.dir
 /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles/test.dir
 /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles/edit_cache.dir

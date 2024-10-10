@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/thanhnguyem/project-TryGuessNumber/test/test_game_libra
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/game_library.dir/all
 all: CMakeFiles/randomTS.dir/all
 .PHONY : all
 
@@ -71,8 +72,35 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/game_library.dir/clean
 clean: CMakeFiles/randomTS.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/game_library.dir
+
+# All Build rule for target.
+CMakeFiles/game_library.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles --progress-num=1,2,3 "Built target game_library"
+.PHONY : CMakeFiles/game_library.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/game_library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/game_library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles 0
+.PHONY : CMakeFiles/game_library.dir/rule
+
+# Convenience name for target.
+game_library: CMakeFiles/game_library.dir/rule
+.PHONY : game_library
+
+# clean rule for target.
+CMakeFiles/game_library.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/clean
+.PHONY : CMakeFiles/game_library.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/randomTS.dir
@@ -81,7 +109,7 @@ clean: CMakeFiles/randomTS.dir/clean
 CMakeFiles/randomTS.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomTS.dir/build.make CMakeFiles/randomTS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomTS.dir/build.make CMakeFiles/randomTS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles --progress-num=1,2 "Built target randomTS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/CMakeFiles --progress-num=4,5 "Built target randomTS"
 .PHONY : CMakeFiles/randomTS.dir/all
 
 # Build rule for subdir invocation for target.
