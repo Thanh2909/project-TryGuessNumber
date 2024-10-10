@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.10)
+project(library_test)
+
+# Add GoogleTest
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
+# Add source files for randomTS
+set(RANDOM_SOURCE_FILES /home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp)
+
+    # Create executable for random testing
+    add_executable(randomTS ${RANDOM_SOURCE_FILES})
+
+    # Link Google Test and pthread libraries to randomTS
+    target_link_libraries(randomTS GTest::gtest_main pthread)
+
+    # Add tests for randomTS
+    add_test(NAME RunTestsRandom COMMAND randomTS)
+    add_test(NAME R2 COMMAND randomTS --gtest_filter=uniform_int)
+    add_test(NAME R3 COMMAND randomTS --gtest_filter=normal)
+
+# Enable testing
+enable_testing()
