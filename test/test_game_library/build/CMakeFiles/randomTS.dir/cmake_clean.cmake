@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/randomTS.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp.o"
   "CMakeFiles/randomTS.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp.o.d"
+  "CMakeFiles/randomTS.dir/test_random.cpp.o"
+  "CMakeFiles/randomTS.dir/test_random.cpp.o.d"
   "randomTS"
   "randomTS.pdb"
 )

@@ -1,7 +1,8 @@
 CMakeFiles/randomTS.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp.o: \
  /home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/13/random \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/stdc-predef.h \
+ /home/thanhnguyem/project-TryGuessNumber/data_library/src/../include/random.h \
+ /usr/include/c++/13/random /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -156,5 +157,4 @@ CMakeFiles/randomTS.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/c++/13/bits/parse_numbers.h \
- /home/thanhnguyem/project-TryGuessNumber/data_library/src/../include/random.h
+ /usr/include/c++/13/bits/parse_numbers.h

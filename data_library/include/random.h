@@ -1,10 +1,12 @@
-#include <random>
-#include <chrono>
+#include <random>  // Used to declare std::default_random_engine
 
 class RandomGenerator {
 public:
-    RandomGenerator() : generator(std::chrono::system_clock::now().time_since_epoch().count()) {}
+    RandomGenerator();
+    
     int uniform_int(int min, int max);
     double normal(double mean, double stddev);
-    std::default_random_engine generator;
+
+private:
+    std::default_random_engine generator;  // Set private to protect integrity
 };

@@ -224,6 +224,30 @@ test_library.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_library.dir/build.make CMakeFiles/game_library.dir/test_library.cpp.s
 .PHONY : test_library.cpp.s
 
+test_random.o: test_random.cpp.o
+.PHONY : test_random.o
+
+# target to build an object file
+test_random.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomTS.dir/build.make CMakeFiles/randomTS.dir/test_random.cpp.o
+.PHONY : test_random.cpp.o
+
+test_random.i: test_random.cpp.i
+.PHONY : test_random.i
+
+# target to preprocess a source file
+test_random.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomTS.dir/build.make CMakeFiles/randomTS.dir/test_random.cpp.i
+.PHONY : test_random.cpp.i
+
+test_random.s: test_random.cpp.s
+.PHONY : test_random.s
+
+# target to generate assembly for a file
+test_random.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomTS.dir/build.make CMakeFiles/randomTS.dir/test_random.cpp.s
+.PHONY : test_random.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -244,6 +268,9 @@ help:
 	@echo "... test_library.o"
 	@echo "... test_library.i"
 	@echo "... test_library.s"
+	@echo "... test_random.o"
+	@echo "... test_random.i"
+	@echo "... test_random.s"
 .PHONY : help
 
 

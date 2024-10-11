@@ -20,11 +20,11 @@ add_test(NAME L4  COMMAND game_library --gtest_filter=record_guess_attempt)
 add_test(NAME L5  COMMAND game_library --gtest_filter=get_average_attempts)
 
 # Add source files for randomTS
-set(RANDOM_SOURCE_FILES /home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp)
+set(SOURCE_FILES_RD /home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp)
 
     # Create executable for random testing
-    add_executable(randomTS ${RANDOM_SOURCE_FILES})
-
+    # add_executable(randomTS ${SOURCE_FILES_RD})
+    add_executable(randomTS test_random.cpp ${SOURCE_FILES_RD})
     # Link Google Test and pthread libraries to randomTS
     target_link_libraries(randomTS GTest::gtest_main pthread)
 

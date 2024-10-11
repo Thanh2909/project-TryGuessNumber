@@ -4,7 +4,7 @@
 CMakeFiles/game_library.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o
  /home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp
  /home/thanhnguyem/project-TryGuessNumber/data_library/include/game_library.h
- /home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp
+ /home/thanhnguyem/project-TryGuessNumber/data_library/include/random.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h

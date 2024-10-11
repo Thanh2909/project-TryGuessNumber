@@ -3,7 +3,7 @@
 
 CMakeFiles/game_library.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o: /home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp \
   /home/thanhnguyem/project-TryGuessNumber/data_library/include/game_library.h \
-  /home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp \
+  /home/thanhnguyem/project-TryGuessNumber/data_library/include/random.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -778,6 +778,8 @@ CMakeFiles/game_library.dir/test_library.cpp.o: /home/thanhnguyem/project-TryGue
 
 /usr/include/c++/13/pstl/pstl_config.h:
 
+/home/thanhnguyem/project-TryGuessNumber/data_library/include/random.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
@@ -928,6 +930,14 @@ CMakeFiles/game_library.dir/test_library.cpp.o: /home/thanhnguyem/project-TryGue
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
+/usr/include/alloca.h:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/bit:
+
 /usr/local/include/gtest/gtest.h:
 
 /usr/include/linux/posix_types.h:
@@ -978,24 +988,6 @@ CMakeFiles/game_library.dir/test_library.cpp.o: /home/thanhnguyem/project-TryGue
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
-/usr/include/alloca.h:
-
-/usr/include/c++/13/bits/basic_string.tcc:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/c++/13/bit:
-
-/home/thanhnguyem/project-TryGuessNumber/data_library/src/random.cpp:
-
-/usr/include/linux/errno.h:
-
-/usr/include/c++/13/debug/debug.h:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/c++/13/bits/range_access.h:
-
 /usr/include/c++/13/bits/move.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
@@ -1035,6 +1027,14 @@ CMakeFiles/game_library.dir/test_library.cpp.o: /home/thanhnguyem/project-TryGue
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/13/debug/debug.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
+/usr/include/c++/13/bits/range_access.h:
 
 /home/thanhnguyem/project-TryGuessNumber/data_library/include/game_library.h:
 
