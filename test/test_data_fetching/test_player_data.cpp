@@ -20,8 +20,7 @@ TEST(NguoiChoiTest, OutputOperator) {
     output << player;
 
     std::string expected_output = "Nguyen Van A              | 25   | nguyenvana | Chess | 100             | 200            \n";
-        // In từng ký tự cùng với mã ASCII của chúng
-    std::cout << "Output string (with ASCII values):\n";
+
     EXPECT_EQ(output.str(), expected_output);}
 
 // Test operator << for displaying player information
