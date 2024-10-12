@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
-#include "../../data_fetching/include/player_data.h" // Đường dẫn đến file player.h
+#include "../../data_fetching/include/player_data.h" // Path to player.h
 #include <sstream>
 
 // Test constructor
-TEST(NguoiChoiTest, Constructor) {
+TEST(PlayerTest, Constructor) {
     Playerdata player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200);
     EXPECT_EQ(player.full_name, "Nguyen Van A");
     EXPECT_EQ(player.age, 25);
@@ -13,7 +13,7 @@ TEST(NguoiChoiTest, Constructor) {
     EXPECT_EQ(player.total_guesses, 200);
 }
 
-TEST(NguoiChoiTest, OutputOperator) {
+TEST(PlayerTest, OutputOperator) {
     Playerdata player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200);
     std::ostringstream output;
     output << player;
@@ -24,11 +24,10 @@ TEST(NguoiChoiTest, OutputOperator) {
         "| Nguyen Van A              |   25 | nguyenvana | Chess         |             100 |             200 |\n"
         "+---------------------------------------------------------------------------------------------------+\n";
     EXPECT_EQ(output.str(), expected_output);
-
 }
 
 // Test operator << for displaying player information
-TEST(NguoiChoiTest, OutputStreamTest) {
+TEST(PlayerTest, OutputStreamTest) {
     // Initialize player with default values for games_played and total_guesses as 0
     Playerdata player("Nguyen Van B", 30, "nguyenvanb", "Crossword Game", 0, 0);
     std::stringstream ss;
@@ -70,53 +69,49 @@ TEST(display_menu, SelectDefaultGames) {
     }
 }
 
-
 TEST(display_menu, SelectOtherOptionWithAndWithoutName) {
     std::vector<std::pair<std::string, std::string>> inputs = {
-        {"4\nTrivia\n", "Trivia"},  // Tên trò chơi tùy chọn
-        {"4\n\n", ""}               // Tên trò chơi để trống
+        {"4\nTrivia\n", "Trivia"},  // Custom game name
+        {"4\n\n", ""}               // Empty game name
     };
     
     for (const auto& input_pair : inputs) {
-        // Giả lập input từ người dùng với lựa chọn "Other Option"
+        // Simulate user input for "Other Option"
         std::istringstream input(input_pair.first);
         std::ostringstream output;
 
-        // Thay thế cin và cout để kiểm tra kết quả
+        // Redirect cin and cout to check the output
         std::streambuf* cinbuf = std::cin.rdbuf(input.rdbuf());
         std::streambuf* coutbuf = std::cout.rdbuf(output.rdbuf());
 
         std::string game_name = display_menu();
 
-        // Kiểm tra tên trò chơi trả về đúng với input
+        // Check if the returned game name matches the input
         EXPECT_EQ(game_name, input_pair.second);
         EXPECT_NE(output.str().find("Welcome to " + input_pair.second), std::string::npos);
 
-        // Khôi phục lại stream ban đầu
+        // Restore the original stream
         std::cin.rdbuf(cinbuf);
         std::cout.rdbuf(coutbuf);
     }
 }
 
 TEST(display_menu, ValidChoiceAfterInvalidChoice) {
-    std::istringstream input("5\n3\n");  // Nhập sai lựa chọn 5, sau đó chọn hợp lệ 3 (Chess)
+    std::istringstream input("5\n3\n");  // Invalid choice 5, followed by valid choice 3 (Chess)
     std::ostringstream output;
 
-    // Thay thế cin và cout để kiểm tra kết quả
+    // Redirect cin and cout to check the output
     std::streambuf* cinbuf = std::cin.rdbuf(input.rdbuf());
     std::streambuf* coutbuf = std::cout.rdbuf(output.rdbuf());
 
     std::string game_name = display_menu();
 
-    // Kiểm tra lựa chọn cuối cùng
+    // Check the final choice
     EXPECT_EQ(game_name, "Chess");
     EXPECT_NE(output.str().find("Invalid choice. Please enter a number between 1 and 4."), std::string::npos);
     EXPECT_NE(output.str().find("Welcome to Chess"), std::string::npos);
 
-    // Khôi phục lại stream ban đầu
+    // Restore the original stream
     std::cin.rdbuf(cinbuf);
     std::cout.rdbuf(coutbuf);
 }
-
-
-

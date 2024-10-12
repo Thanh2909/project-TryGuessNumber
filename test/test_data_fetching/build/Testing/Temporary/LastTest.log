@@ -1,23 +1,23 @@
-Start testing: Oct 12 09:37 UTC
+Start testing: Oct 12 09:40 UTC
 ----------------------------------------------------------
 1/1 Testing: RunTestsPlayerData
 1/1 Test: RunTestsPlayerData
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/test_player"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build
-"RunTestsPlayerData" start time: Oct 12 09:37 UTC
+"RunTestsPlayerData" start time: Oct 12 09:40 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
 [==========] Running 6 tests from 2 test suites.
 [----------] Global test environment set-up.
-[----------] 3 tests from NguoiChoiTest
-[ RUN      ] NguoiChoiTest.Constructor
-[       OK ] NguoiChoiTest.Constructor (0 ms)
-[ RUN      ] NguoiChoiTest.OutputOperator
-[       OK ] NguoiChoiTest.OutputOperator (0 ms)
-[ RUN      ] NguoiChoiTest.OutputStreamTest
-[       OK ] NguoiChoiTest.OutputStreamTest (0 ms)
-[----------] 3 tests from NguoiChoiTest (0 ms total)
+[----------] 3 tests from PlayerTest
+[ RUN      ] PlayerTest.Constructor
+[       OK ] PlayerTest.Constructor (0 ms)
+[ RUN      ] PlayerTest.OutputOperator
+[       OK ] PlayerTest.OutputOperator (0 ms)
+[ RUN      ] PlayerTest.OutputStreamTest
+[       OK ] PlayerTest.OutputStreamTest (0 ms)
+[----------] 3 tests from PlayerTest (0 ms total)
 
 [----------] 3 tests from display_menu
 [ RUN      ] display_menu.SelectDefaultGames
@@ -35,8 +35,8 @@ Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetc
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"RunTestsPlayerData" end time: Oct 12 09:37 UTC
+"RunTestsPlayerData" end time: Oct 12 09:40 UTC
 "RunTestsPlayerData" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 12 09:37 UTC
+End testing: Oct 12 09:40 UTC
