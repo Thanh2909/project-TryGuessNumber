@@ -1,7 +1,8 @@
+#ifndef PLAYER_DATA_H
+#define PLAYER_DATA_H
+
 #include <iostream>
-#include <iomanip>
 #include <string>
-#include <algorithm>
 
 class Playerdata {
 public:
@@ -17,6 +18,6 @@ public:
 
 // Function to display the menu for selecting the game name
 std::string display_menu();
-
+#endif
 
 

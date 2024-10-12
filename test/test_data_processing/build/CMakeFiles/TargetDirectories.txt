@@ -1,0 +1,4 @@
+/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles/test_processing.dir
+/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles/test.dir
+/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles/edit_cache.dir
+/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles/rebuild_cache.dir

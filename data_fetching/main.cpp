@@ -1,4 +1,4 @@
-#include "../include/player_data.h"
+#include "include/player_data.h"
 #include <iostream>
 
 int main() {
@@ -25,6 +25,7 @@ int main() {
 
     // Display player information to the screen
     std::cout << player;
+    
 
     return 0;
 }
