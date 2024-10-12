@@ -53,6 +53,14 @@ std::string display_menu() {
         std::cout << "Enter your choice (1-4): ";
         std::cin >> choice;
 
+        // Kiểm tra nếu nhập không phải số
+        if (std::cin.fail()) {
+            std::cin.clear();  // Xóa trạng thái lỗi của cin
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // Bỏ qua tất cả ký tự còn lại trong buffer
+            std::cout << "Invalid input. Please enter a number between 1 and 4." << std::endl;
+            continue;
+        }
+        
         // Bỏ qua ký tự xuống dòng sau khi nhập lựa chọn
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 

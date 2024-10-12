@@ -115,3 +115,24 @@ TEST(display_menu, ValidChoiceAfterInvalidChoice) {
     std::cin.rdbuf(cinbuf);
     std::cout.rdbuf(coutbuf);
 }
+
+
+TEST(display_menu, InvalidCharInput) {
+    std::istringstream input("a\n1\n");  // Invalid choice a, followed by valid choice 1
+    std::ostringstream output;
+
+    // Redirect cin and cout to check the output
+    std::streambuf* cinbuf = std::cin.rdbuf(input.rdbuf());
+    std::streambuf* coutbuf = std::cout.rdbuf(output.rdbuf());
+
+    std::string game_name = display_menu();
+
+    // Check the final choice
+    EXPECT_EQ(game_name, "Guessing Game");
+    EXPECT_NE(output.str().find("Invalid input. Please enter a number between 1 and 4."), std::string::npos);
+    EXPECT_NE(output.str().find("Welcome to Guessing Game"), std::string::npos);
+
+    // Restore the original stream
+    std::cin.rdbuf(cinbuf);
+    std::cout.rdbuf(coutbuf);
+}

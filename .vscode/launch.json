@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/thanhnguyem/project-TryGuessNumber/data_library/src",
-      "program": "/home/thanhnguyem/project-TryGuessNumber/data_library/src/build/Debug/outDebug",
+      "cwd": "/home/thanhnguyem/project-TryGuessNumber/data_fetching/src",
+      "program": "/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
