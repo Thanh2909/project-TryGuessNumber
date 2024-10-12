@@ -1,14 +1,14 @@
-Start testing: Oct 11 10:26 UTC
+Start testing: Oct 12 09:37 UTC
 ----------------------------------------------------------
 1/1 Testing: RunTestsPlayerData
 1/1 Test: RunTestsPlayerData
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/test_player"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build
-"RunTestsPlayerData" start time: Oct 11 10:26 UTC
+"RunTestsPlayerData" start time: Oct 12 09:37 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
-[==========] Running 3 tests from 1 test suite.
+[==========] Running 6 tests from 2 test suites.
 [----------] Global test environment set-up.
 [----------] 3 tests from NguoiChoiTest
 [ RUN      ] NguoiChoiTest.Constructor
@@ -19,15 +19,24 @@ Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetc
 [       OK ] NguoiChoiTest.OutputStreamTest (0 ms)
 [----------] 3 tests from NguoiChoiTest (0 ms total)
 
+[----------] 3 tests from display_menu
+[ RUN      ] display_menu.SelectDefaultGames
+[       OK ] display_menu.SelectDefaultGames (0 ms)
+[ RUN      ] display_menu.SelectOtherOptionWithAndWithoutName
+[       OK ] display_menu.SelectOtherOptionWithAndWithoutName (0 ms)
+[ RUN      ] display_menu.ValidChoiceAfterInvalidChoice
+[       OK ] display_menu.ValidChoiceAfterInvalidChoice (0 ms)
+[----------] 3 tests from display_menu (0 ms total)
+
 [----------] Global test environment tear-down
-[==========] 3 tests from 1 test suite ran. (0 ms total)
-[  PASSED  ] 3 tests.
+[==========] 6 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 6 tests.
 <end of output>
-Test time =   0.07 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"RunTestsPlayerData" end time: Oct 11 10:26 UTC
+"RunTestsPlayerData" end time: Oct 12 09:37 UTC
 "RunTestsPlayerData" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 11 10:26 UTC
+End testing: Oct 12 09:37 UTC

@@ -4,7 +4,7 @@
 
 // Test constructor
 TEST(NguoiChoiTest, Constructor) {
-    NguoiChoi player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200);
+    Playerdata player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200);
     EXPECT_EQ(player.full_name, "Nguyen Van A");
     EXPECT_EQ(player.age, 25);
     EXPECT_EQ(player.username, "nguyenvana");
@@ -13,20 +13,24 @@ TEST(NguoiChoiTest, Constructor) {
     EXPECT_EQ(player.total_guesses, 200);
 }
 
-// Test the overloaded << operator
 TEST(NguoiChoiTest, OutputOperator) {
-    NguoiChoi player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200);
+    Playerdata player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200);
     std::ostringstream output;
     output << player;
+    std::string expected_output = 
+        "+---------------------------------------------------------------------------------------------------+\n"
+        "|        Full Name          |  Age |  Username  |   Game Name   |   Games Played  |  Total Guesses  |\n"
+        "+---------------------------------------------------------------------------------------------------+\n"
+        "| Nguyen Van A              |   25 | nguyenvana | Chess         |             100 |             200 |\n"
+        "+---------------------------------------------------------------------------------------------------+\n";
+    EXPECT_EQ(output.str(), expected_output);
 
-    std::string expected_output = "Nguyen Van A              | 25   | nguyenvana | Chess | 100             | 200            \n";
-
-    EXPECT_EQ(output.str(), expected_output);}
+}
 
 // Test operator << for displaying player information
 TEST(NguoiChoiTest, OutputStreamTest) {
     // Initialize player with default values for games_played and total_guesses as 0
-    NguoiChoi player("Nguyen Van B", 30, "nguyenvanb", "Crossword Game", 0, 0);
+    Playerdata player("Nguyen Van B", 30, "nguyenvanb", "Crossword Game", 0, 0);
     std::stringstream ss;
     
     ss << player; // Format output using operator<<
@@ -41,5 +45,78 @@ TEST(NguoiChoiTest, OutputStreamTest) {
     // Check for default values of 0 for games_played and total_guesses
     EXPECT_NE(output.find("0"), std::string::npos); // Default games played and guesses should be 0
 }
+
+TEST(display_menu, SelectDefaultGames) {
+    std::vector<std::pair<int, std::string>> choices = {
+        {1, "Guessing Game"},
+        {2, "Crossword Game"},
+        {3, "Chess"}
+    };
+    
+    for (const auto& choice : choices) {
+        std::istringstream input(std::to_string(choice.first) + "\n");
+        std::ostringstream output;
+        
+        std::streambuf* cinbuf = std::cin.rdbuf(input.rdbuf());
+        std::streambuf* coutbuf = std::cout.rdbuf(output.rdbuf());
+
+        std::string game_name = display_menu();
+        
+        EXPECT_EQ(game_name, choice.second);
+        EXPECT_NE(output.str().find("Welcome to " + choice.second), std::string::npos);
+        
+        std::cin.rdbuf(cinbuf);
+        std::cout.rdbuf(coutbuf);
+    }
+}
+
+
+TEST(display_menu, SelectOtherOptionWithAndWithoutName) {
+    std::vector<std::pair<std::string, std::string>> inputs = {
+        {"4\nTrivia\n", "Trivia"},  // Tên trò chơi tùy chọn
+        {"4\n\n", ""}               // Tên trò chơi để trống
+    };
+    
+    for (const auto& input_pair : inputs) {
+        // Giả lập input từ người dùng với lựa chọn "Other Option"
+        std::istringstream input(input_pair.first);
+        std::ostringstream output;
+
+        // Thay thế cin và cout để kiểm tra kết quả
+        std::streambuf* cinbuf = std::cin.rdbuf(input.rdbuf());
+        std::streambuf* coutbuf = std::cout.rdbuf(output.rdbuf());
+
+        std::string game_name = display_menu();
+
+        // Kiểm tra tên trò chơi trả về đúng với input
+        EXPECT_EQ(game_name, input_pair.second);
+        EXPECT_NE(output.str().find("Welcome to " + input_pair.second), std::string::npos);
+
+        // Khôi phục lại stream ban đầu
+        std::cin.rdbuf(cinbuf);
+        std::cout.rdbuf(coutbuf);
+    }
+}
+
+TEST(display_menu, ValidChoiceAfterInvalidChoice) {
+    std::istringstream input("5\n3\n");  // Nhập sai lựa chọn 5, sau đó chọn hợp lệ 3 (Chess)
+    std::ostringstream output;
+
+    // Thay thế cin và cout để kiểm tra kết quả
+    std::streambuf* cinbuf = std::cin.rdbuf(input.rdbuf());
+    std::streambuf* coutbuf = std::cout.rdbuf(output.rdbuf());
+
+    std::string game_name = display_menu();
+
+    // Kiểm tra lựa chọn cuối cùng
+    EXPECT_EQ(game_name, "Chess");
+    EXPECT_NE(output.str().find("Invalid choice. Please enter a number between 1 and 4."), std::string::npos);
+    EXPECT_NE(output.str().find("Welcome to Chess"), std::string::npos);
+
+    // Khôi phục lại stream ban đầu
+    std::cin.rdbuf(cinbuf);
+    std::cout.rdbuf(coutbuf);
+}
+
 
 
