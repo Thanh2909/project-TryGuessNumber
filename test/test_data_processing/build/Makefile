@@ -139,6 +139,54 @@ test_processing/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/build
 .PHONY : test_processing/fast
 
+home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.o: home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.o
+
+# target to build an object file
+home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o
+
+home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.i: home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.i
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.i
+
+# target to preprocess a source file
+home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.i
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.i
+
+home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.s: home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.s
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.s
+
+# target to generate assembly for a file
+home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.s
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.s
+
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.o: home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.o
+
+# target to build an object file
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o
+
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.i: home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.i
+
+# target to preprocess a source file
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i
+
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.s: home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.s
+
+# target to generate assembly for a file
+home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s
+.PHONY : home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s
+
 home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.o: home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o
 .PHONY : home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.o
 
@@ -197,6 +245,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... test_processing"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.o"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.i"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.s"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.o"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.i"
+	@echo "... home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.s"
 	@echo "... home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.o"
 	@echo "... home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.i"
 	@echo "... home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.s"

@@ -21,11 +21,11 @@ int main() {
     std::getline(std::cin, username);
 
     // Create a Playerdata object with the entered information
-    Playerdata player(full_name, age, username, game_name, 0, 0);
+    Playerdata player(full_name, age, username, game_name, 0, 0,0);
 
     // Display player information to the screen
     std::cout << player;
-    
+
 
     return 0;
 }

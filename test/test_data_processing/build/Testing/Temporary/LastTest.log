@@ -1,0 +1,33 @@
+Start testing: Oct 13 04:08 UTC
+----------------------------------------------------------
+1/1 Testing: RunTestsProcessing
+1/1 Test: RunTestsProcessing
+Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/test_processing"
+Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build
+"RunTestsProcessing" start time: Oct 13 04:08 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from GameTest
+[ RUN      ] GameTest.CorrectGuessOnFirstTry
+[       OK ] GameTest.CorrectGuessOnFirstTry (0 ms)
+[ RUN      ] GameTest.RecordGuessAttemptCalled
+[       OK ] GameTest.RecordGuessAttemptCalled (0 ms)
+[ RUN      ] GameTest.AverageAttemptsCalculatedCorrectly
+[       OK ] GameTest.AverageAttemptsCalculatedCorrectly (0 ms)
+[----------] 3 tests from GameTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"RunTestsProcessing" end time: Oct 13 04:08 UTC
+"RunTestsProcessing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 13 04:08 UTC

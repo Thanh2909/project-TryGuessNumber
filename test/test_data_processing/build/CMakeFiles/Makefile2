@@ -81,12 +81,12 @@ clean: CMakeFiles/test_processing.dir/clean
 CMakeFiles/test_processing.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processing.dir/build.make CMakeFiles/test_processing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles --progress-num=1,2,3 "Built target test_processing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target test_processing"
 .PHONY : CMakeFiles/test_processing.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_processing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_processing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_processing.dir/rule

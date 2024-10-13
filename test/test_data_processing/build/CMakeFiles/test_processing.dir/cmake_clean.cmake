@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o"
+  "CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o.d"
+  "CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o"
+  "CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o.d"
   "CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o"
   "CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o.d"
   "CMakeFiles/test_processing.dir/test_processing.cpp.o"

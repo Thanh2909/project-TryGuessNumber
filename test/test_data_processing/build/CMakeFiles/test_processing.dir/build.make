@@ -83,10 +83,38 @@ CMakeFiles/test_processing.dir/test_processing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_processing.dir/test_processing.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/test_processing.cpp -o CMakeFiles/test_processing.dir/test_processing.cpp.s
 
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o: CMakeFiles/test_processing.dir/flags.make
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o: /home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o: CMakeFiles/test_processing.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o -MF CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o.d -o CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o -c /home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp
+
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp > CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.i
+
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp -o CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.s
+
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o: CMakeFiles/test_processing.dir/flags.make
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o: /home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o: CMakeFiles/test_processing.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o -MF CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o.d -o CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o -c /home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp
+
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp > CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.i
+
+CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp -o CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.s
+
 CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o: CMakeFiles/test_processing.dir/flags.make
 CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o: /home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp
 CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o: CMakeFiles/test_processing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o -MF CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o.d -o CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o -c /home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp
 
 CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.i: cmake_force
@@ -100,18 +128,22 @@ CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_proc
 # Object files for target test_processing
 test_processing_OBJECTS = \
 "CMakeFiles/test_processing.dir/test_processing.cpp.o" \
+"CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o" \
+"CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o" \
 "CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o"
 
 # External object files for target test_processing
 test_processing_EXTERNAL_OBJECTS =
 
 test_processing: CMakeFiles/test_processing.dir/test_processing.cpp.o
+test_processing: CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp.o
+test_processing: CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp.o
 test_processing: CMakeFiles/test_processing.dir/home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp.o
 test_processing: CMakeFiles/test_processing.dir/build.make
 test_processing: /usr/local/lib/libgtest_main.a
 test_processing: /usr/local/lib/libgtest.a
 test_processing: CMakeFiles/test_processing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test_processing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test_processing"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_processing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,32 +4,33 @@
 
 // Test constructor
 TEST(PlayerTest, Constructor) {
-    Playerdata player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200);
+    Playerdata player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200, 2.5);
     EXPECT_EQ(player.full_name, "Nguyen Van A");
     EXPECT_EQ(player.age, 25);
     EXPECT_EQ(player.username, "nguyenvana");
     EXPECT_EQ(player.game_name, "Chess");
     EXPECT_EQ(player.games_played, 100);
     EXPECT_EQ(player.total_guesses, 200);
+    EXPECT_EQ(player.average_attempts, 2.5);
 }
 
 TEST(PlayerTest, OutputOperator) {
-    Playerdata player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200);
+    Playerdata player("Nguyen Van A", 25, "nguyenvana", "Chess", 100, 200, 2.5);
     std::ostringstream output;
     output << player;
     std::string expected_output = 
-        "+---------------------------------------------------------------------------------------------------+\n"
-        "|        Full Name          |  Age |  Username  |   Game Name   |   Games Played  |  Total Guesses  |\n"
-        "+---------------------------------------------------------------------------------------------------+\n"
-        "| Nguyen Van A              |   25 | nguyenvana | Chess         |             100 |             200 |\n"
-        "+---------------------------------------------------------------------------------------------------+\n";
+        "+----------------------------------------------------------------------------------------------------------------------+\n"
+        "|        Full Name          |  Age |  Username  |   Game Name   |   Games Played  |  Total Guesses  | Average attempts  \n"
+        "+----------------------------------------------------------------------------------------------------------------------+\n"
+        "| Nguyen Van A              |   25 | nguyenvana | Chess         |             100 |             200 |              2.5  \n"
+        "+----------------------------------------------------------------------------------------------------------------------+\n";
     EXPECT_EQ(output.str(), expected_output);
 }
 
 // Test operator << for displaying player information
 TEST(PlayerTest, OutputStreamTest) {
     // Initialize player with default values for games_played and total_guesses as 0
-    Playerdata player("Nguyen Van B", 30, "nguyenvanb", "Crossword Game", 0, 0);
+    Playerdata player("Nguyen Van B", 30, "nguyenvanb", "Crossword Game", 0, 0, 0);
     std::stringstream ss;
     
     ss << player; // Format output using operator<<

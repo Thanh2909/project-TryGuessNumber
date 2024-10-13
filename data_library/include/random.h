@@ -1,3 +1,5 @@
+#ifndef RANDOM_H
+#define RANDOM_H
 #include <random>  // Used to declare std::default_random_engine
 
 class RandomGenerator {
@@ -10,3 +12,4 @@ public:
 private:
     std::default_random_engine generator;  // Set private to protect integrity
 };
+#endif

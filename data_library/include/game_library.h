@@ -13,6 +13,7 @@ public:
     static void record_guess_attempt(int attempts);
     // Function to calculate the average number of attempts over multiple rounds
     static double get_average_attempts();
+    static void reset_guess_attempts();
     static std::vector<int> guess_attempts;
 };
 

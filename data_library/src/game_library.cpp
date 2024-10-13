@@ -33,3 +33,9 @@
         return static_cast<double>(std::accumulate(guess_attempts.begin(), guess_attempts.end(), 0)) / guess_attempts.size();
     }
 
+    void GameLibrary::reset_guess_attempts() {
+    guess_attempts.clear();}
+
+
+
+

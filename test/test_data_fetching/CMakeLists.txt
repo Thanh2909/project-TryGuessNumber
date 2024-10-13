@@ -10,6 +10,7 @@ set(SOURCE_FILES_PD /home/thanhnguyem/project-TryGuessNumber/data_fetching/src/p
 
 # Create executable for testing
 add_executable(test_player test_player_data.cpp ${SOURCE_FILES_PD})
+
 # Link Google Test and pthread libraries to the program
 target_link_libraries(test_player GTest::gtest_main pthread)
 # add_test(NAME test_library COMMAND game_library --gtest_filter= )

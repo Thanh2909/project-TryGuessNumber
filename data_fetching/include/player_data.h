@@ -12,12 +12,13 @@ public:
     std::string game_name;
     int games_played;
     int total_guesses;
-    Playerdata(std::string fn, int a, std::string un, std::string gn, int gp, int tg);
+    double average_attempts;
+    Playerdata(std::string fn, int a, std::string un, std::string gn, int gp, int tg, double aa);
     friend std::ostream& operator<<(std::ostream& os, const Playerdata& player);  
 };
-
 // Function to display the menu for selecting the game name
 std::string display_menu();
+int display_pause();
 #endif
 
 
