@@ -1,10 +1,10 @@
-Start testing: Oct 14 05:10 UTC
+Start testing: Oct 14 08:07 UTC
 ----------------------------------------------------------
 1/1 Testing: RunTestsProcessing
 1/1 Test: RunTestsProcessing
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build/test_processing"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/build
-"RunTestsProcessing" start time: Oct 14 05:10 UTC
+"RunTestsProcessing" start time: Oct 14 08:07 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -26,8 +26,8 @@ Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetc
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"RunTestsProcessing" end time: Oct 14 05:10 UTC
+"RunTestsProcessing" end time: Oct 14 08:07 UTC
 "RunTestsProcessing" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 14 05:10 UTC
+End testing: Oct 14 08:07 UTC

@@ -1,10 +1,10 @@
-Start testing: Oct 14 05:10 UTC
+Start testing: Oct 14 08:07 UTC
 ----------------------------------------------------------
 1/1 Testing: RunTestsPlayerData
 1/1 Test: RunTestsPlayerData
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/test_player"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build
-"RunTestsPlayerData" start time: Oct 14 05:10 UTC
+"RunTestsPlayerData" start time: Oct 14 08:07 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -29,8 +29,8 @@ Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetc
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"RunTestsPlayerData" end time: Oct 14 05:10 UTC
+"RunTestsPlayerData" end time: Oct 14 08:07 UTC
 "RunTestsPlayerData" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 14 05:10 UTC
+End testing: Oct 14 08:07 UTC
