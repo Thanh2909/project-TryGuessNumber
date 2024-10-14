@@ -114,7 +114,6 @@ TEST_F(record_guess_attempt, RecordBoundaryValues) {
 
 // Check the record_guess_attempt function with negative values
 TEST_F(record_guess_attempt, RecordNegativeValue) {
-    library.guess_attempts.clear();
     library.record_guess_attempt(-1);
 
     std::vector<int> attempts = library.guess_attempts;

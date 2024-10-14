@@ -31,9 +31,6 @@ int main() {
          Playerdata player(fullName, age, username, gameName, total_games_played, total_guesses_made, guess_rate_corect);
         // Game loop and pause after each game
         while (true) {
-            // Display initial player information
-            // cout << player << endl;
-
             // Initialize Game object and start the game
             Game game;
             cout << "Round: " << total_games_played << endl;

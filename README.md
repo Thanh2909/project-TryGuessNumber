@@ -14,3 +14,4 @@ The project is divided into three parts:
 ### 1. Build the project
 Run the following script to build all parts of the project:
 ./build_project.sh ()
+
