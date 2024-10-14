@@ -11,7 +11,7 @@ TEST(PlayerTest, Constructor) {
     EXPECT_EQ(player.game_name, "Chess");
     EXPECT_EQ(player.games_played, 100);
     EXPECT_EQ(player.total_guesses, 200);
-    EXPECT_EQ(player.average_attempts, 2.5);
+    EXPECT_EQ(player.guess_rate, 2.5);
 }
 
 TEST(PlayerTest, OutputOperator) {
@@ -19,11 +19,11 @@ TEST(PlayerTest, OutputOperator) {
     std::ostringstream output;
     output << player;
     std::string expected_output = 
-        "+----------------------------------------------------------------------------------------------------------------------+\n"
-        "|        Full Name          |  Age |  Username  |   Game Name   |   Games Played  |  Total Guesses  | Average attempts  \n"
-        "+----------------------------------------------------------------------------------------------------------------------+\n"
-        "| Nguyen Van A              |   25 | nguyenvana | Chess         |             100 |             200 |              2.5  \n"
-        "+----------------------------------------------------------------------------------------------------------------------+\n";
+        "+-----------------------------------------------------------------------------------------------------------------------+\n"
+        "|        Full Name          |  Age |  Username  |   Game Name   |   Games Played  |  Total Guesses  | Corect guess rate |\n"
+        "+-----------------------------------------------------------------------------------------------------------------------+\n"
+        "| Nguyen Van A              |   25 | nguyenvana | Chess         |             100 |             200 |               2.5 |\n"
+        "+-----------------------------------------------------------------------------------------------------------------------+\n";
     EXPECT_EQ(output.str(), expected_output);
 }
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_playerdata.dir/test/test_data_fetching/test_player_data.cpp.o CMakeFiles/test_playerdata.dir/data_fetching/src/player_data.cpp.o -o test_playerdata  /usr/local/lib/libgtest_main.a -lpthread /usr/local/lib/libgtest.a 

@@ -45,7 +45,7 @@ public:
 };
 
 TEST(GameTest, CorrectGuessOnFirstTry) {
-    Playerdata player("THANH NGUYEN", 25, "TONY", "Guessing Game", 0, 0);
+    Playerdata player("THANH NGUYEN", 25, "TONY", "Guessing Game", 0, 0,0);
     MockGame game({25}); // Giả sử số đoán là 25 ngay lần đầu tiên
     game.start_game(player);
 
@@ -57,7 +57,7 @@ TEST(GameTest, CorrectGuessOnFirstTry) {
 }
 
 TEST(GameTest, RecordGuessAttemptCalled) {
-    Playerdata player("THANH NGUYEN", 25, "TONY", "Guessing Game", 0, 0);
+    Playerdata player("THANH NGUYEN", 25, "TONY", "Guessing Game", 0, 0,0);
     MockGame game({25}); // Giả sử số đoán là 25 ngay lần đầu tiên
     game.start_game(player);
 
@@ -67,7 +67,7 @@ TEST(GameTest, RecordGuessAttemptCalled) {
 
 TEST(GameTest, AverageAttemptsCalculatedCorrectly) {
     GameLibrary::guess_attempts.clear();
-    Playerdata player("THANH NGUYEN", 25, "TONY", "Guessing Game", 0, 0);
+    Playerdata player("THANH NGUYEN", 25, "TONY", "Guessing Game", 0, 0,0);
     MockGame game1({0,25}); // Lần chơi thứ nhất, đoán đúng sau 2 lần
     game1.start_game(player);
     

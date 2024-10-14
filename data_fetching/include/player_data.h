@@ -12,8 +12,8 @@ public:
     std::string game_name;
     int games_played;
     int total_guesses;
-    double average_attempts;
-    Playerdata(std::string fn, int a, std::string un, std::string gn, int gp, int tg, double aa);
+    double guess_rate;
+    Playerdata(std::string fn, int a, std::string un, std::string gn, int gp, int tg, double gr);
     friend std::ostream& operator<<(std::ostream& os, const Playerdata& player);  
 };
 // Function to display the menu for selecting the game name

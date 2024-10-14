@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.10)
+project(MyGameTest)
+
+# Add GoogleTest
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
+# Add source files
+set(SOURCE_FILES_PD /home/thanhnguyem/project-TryGuessNumber/data_fetching/src/player_data.cpp)
+set(SOURCE_FILES_GL /home/thanhnguyem/project-TryGuessNumber/data_library/src/game_library.cpp)
+set(SOURCE_FILES_G /home/thanhnguyem/project-TryGuessNumber/data_processing/src/game.cpp)
+
+# Create executable for testing
+add_executable(test_playerdata /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/test_player_data.cpp ${SOURCE_FILES_PD})
+add_executable(test_gamelibrary /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/test_library.cpp ${SOURCE_FILES_GL})
+add_executable(test_processing /home/thanhnguyem/project-TryGuessNumber/test/test_data_processing/test_processing.cpp ${SOURCE_FILES_PD} ${SOURCE_FILES_GL} ${SOURCE_FILES_G})
+
+# Link Google Test and pthread libraries to the program
+target_link_libraries(test_playerdata GTest::gtest_main pthread)
+target_link_libraries(test_gamelibrary GTest::gtest_main pthread)
+target_link_libraries(test_processing GTest::gtest_main pthread)
+
+# Add test
+add_test(NAME PD COMMAND test_playerdata)
+add_test(NAME GL COMMAND test_gamelibrary)
+add_test(NAME P COMMAND test_processing)
+# Enable testinga
+enable_testing()

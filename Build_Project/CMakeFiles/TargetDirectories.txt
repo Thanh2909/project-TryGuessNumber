@@ -1,0 +1,6 @@
+/home/thanhnguyem/project-TryGuessNumber/Build_Project/CMakeFiles/test_playerdata.dir
+/home/thanhnguyem/project-TryGuessNumber/Build_Project/CMakeFiles/test_gamelibrary.dir
+/home/thanhnguyem/project-TryGuessNumber/Build_Project/CMakeFiles/test_processing.dir
+/home/thanhnguyem/project-TryGuessNumber/Build_Project/CMakeFiles/test.dir
+/home/thanhnguyem/project-TryGuessNumber/Build_Project/CMakeFiles/edit_cache.dir
+/home/thanhnguyem/project-TryGuessNumber/Build_Project/CMakeFiles/rebuild_cache.dir

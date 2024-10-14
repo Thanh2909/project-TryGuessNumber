@@ -25,7 +25,7 @@ int Game::get_player_guess() {
 
 
 std::pair<int, double> Game::start_game(const Playerdata& player) {
-    int secret_number = GameLibrary::generate_secret_number(1, 100); // Generate a random number between 1 and 100
+    int secret_number = GameLibrary::generate_secret_number(1, 5); // Generate a random number between 1 and 100
     int attempts = 0;
     int guess = 0;
     std::cout << "Alright, " << player.username << ". I have picked a number between 1 and 100. Try to guess it!" << std::endl;

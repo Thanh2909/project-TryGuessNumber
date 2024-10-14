@@ -277,6 +277,4 @@ CMakeFiles/game_library.dir/test_library.cpp.o: \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
- /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/../../data_library/include/game_library.h \
- /usr/include/c++/13/numeric /usr/include/c++/13/bits/stl_numeric.h \
- /usr/include/c++/13/pstl/glue_numeric_defs.h
+ /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/../../data_library/include/game_library.h

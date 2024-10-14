@@ -19,5 +19,5 @@ target_link_libraries(test_processing GTest::gtest_main pthread)
 # Add test
 add_test(NAME RunTestsProcessing COMMAND test_processing)
 
-# Enable testing
+# Enable testinga
 enable_testing()

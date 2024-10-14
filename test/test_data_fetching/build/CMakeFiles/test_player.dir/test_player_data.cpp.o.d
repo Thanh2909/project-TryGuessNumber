@@ -277,7 +277,4 @@ CMakeFiles/test_player.dir/test_player_data.cpp.o: \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
- /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/../../data_fetching/include/player_data.h \
- /usr/include/c++/13/iomanip /usr/include/c++/13/bits/quoted_string.h \
- /usr/include/c++/13/algorithm \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h
+ /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/../../data_fetching/include/player_data.h

@@ -1,0 +1,129 @@
+Start testing: Oct 14 07:43 UTC
+----------------------------------------------------------
+1/3 Testing: PD
+1/3 Test: PD
+Command: "/home/thanhnguyem/project-TryGuessNumber/Build_Project/test_playerdata"
+Directory: /home/thanhnguyem/project-TryGuessNumber/Build_Project
+"PD" start time: Oct 14 07:43 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
+[==========] Running 7 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 3 tests from PlayerTest
+[ RUN      ] PlayerTest.Constructor
+[       OK ] PlayerTest.Constructor (0 ms)
+[ RUN      ] PlayerTest.OutputOperator
+[       OK ] PlayerTest.OutputOperator (0 ms)
+[ RUN      ] PlayerTest.OutputStreamTest
+[       OK ] PlayerTest.OutputStreamTest (0 ms)
+[----------] 3 tests from PlayerTest (0 ms total)
+
+[----------] 4 tests from display_menu
+[ RUN      ] display_menu.SelectDefaultGames
+[       OK ] display_menu.SelectDefaultGames (0 ms)
+[ RUN      ] display_menu.SelectOtherOptionWithAndWithoutName
+[       OK ] display_menu.SelectOtherOptionWithAndWithoutName (0 ms)
+[ RUN      ] display_menu.ValidChoiceAfterInvalidChoice
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"PD" end time: Oct 14 07:43 UTC
+"PD" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: GL
+2/3 Test: GL
+Command: "/home/thanhnguyem/project-TryGuessNumber/Build_Project/test_gamelibrary"
+Directory: /home/thanhnguyem/project-TryGuessNumber/Build_Project
+"GL" start time: Oct 14 07:43 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
+[==========] Running 15 tests from 4 test suites.
+[----------] Global test environment set-up.
+[----------] 6 tests from generate_secret_number
+[ RUN      ] generate_secret_number.WithinBounds
+[       OK ] generate_secret_number.WithinBounds (22 ms)
+[ RUN      ] generate_secret_number.NegativeBounds
+[       OK ] generate_secret_number.NegativeBounds (19 ms)
+[ RUN      ] generate_secret_number.EqualBounds
+[       OK ] generate_secret_number.EqualBounds (19 ms)
+[ RUN      ] generate_secret_number.Randomness
+[       OK ] generate_secret_number.Randomness (17 ms)
+[ RUN      ] generate_secret_number.LargeRange
+[       OK ] generate_secret_number.LargeRange (22 ms)
+[ RUN      ] generate_secret_number.BoundaryValues
+[       OK ] generate_secret_number.BoundaryValues (0 ms)
+[----------] 6 tests from generate_secret_number (101 ms total)
+
+[----------] 1 test from is_correct_guess
+[ RUN      ] is_correct_guess.CKCorrectGuess
+[       OK ] is_correct_guess.CKCorrectGuess (0 ms)
+[----------] 1 test from is_correct_guess (0 ms total)
+
+[----------] 4 tests from record_guess_attempt
+[ RUN      ] record_guess_attempt.RecordSingleGuessAttempt
+[       OK ] record_guess_attempt.RecordSingleGuessAttempt (0 ms)
+[ RUN      ] record_guess_attempt.RecordMultipleGuessAttempts
+[       OK ] record_guess_attempt.RecordMultipleGuessAttempts (0 ms)
+[ RUN      ] record_guess_attempt.RecordBoundaryValues
+[       OK ] record_guess_attempt.RecordBoundaryValues (0 ms)
+[ RUN      ] record_guess_attempt.RecordNegativeValue
+[       OK ] record_guess_attempt.RecordNegativeValue (0 ms)
+[----------] 4 tests from record_guess_attempt (0 ms total)
+
+[----------] 4 tests from get_average_attempts
+[ RUN      ] get_average_attempts.AverageAttempts_Empty
+[       OK ] get_average_attempts.AverageAttempts_Empty (0 ms)
+[ RUN      ] get_average_attempts.AverageAttempts_Single
+[       OK ] get_average_attempts.AverageAttempts_Single (0 ms)
+[ RUN      ] get_average_attempts.AverageAttempts_Multiple
+[       OK ] get_average_attempts.AverageAttempts_Multiple (0 ms)
+[ RUN      ] get_average_attempts.AverageAttempts_BoundaryValues
+[       OK ] get_average_attempts.AverageAttempts_BoundaryValues (0 ms)
+[----------] 4 tests from get_average_attempts (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 4 test suites ran. (101 ms total)
+[  PASSED  ] 15 tests.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"GL" end time: Oct 14 07:43 UTC
+"GL" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: P
+3/3 Test: P
+Command: "/home/thanhnguyem/project-TryGuessNumber/Build_Project/test_processing"
+Directory: /home/thanhnguyem/project-TryGuessNumber/Build_Project
+"P" start time: Oct 14 07:43 UTC
+Output:
+----------------------------------------------------------
+Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from GameTest
+[ RUN      ] GameTest.CorrectGuessOnFirstTry
+[       OK ] GameTest.CorrectGuessOnFirstTry (0 ms)
+[ RUN      ] GameTest.RecordGuessAttemptCalled
+[       OK ] GameTest.RecordGuessAttemptCalled (0 ms)
+[ RUN      ] GameTest.AverageAttemptsCalculatedCorrectly
+[       OK ] GameTest.AverageAttemptsCalculatedCorrectly (0 ms)
+[----------] 3 tests from GameTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"P" end time: Oct 14 07:43 UTC
+"P" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 14 07:43 UTC

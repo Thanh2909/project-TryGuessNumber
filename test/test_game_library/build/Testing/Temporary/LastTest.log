@@ -1,10 +1,10 @@
-Start testing: Oct 11 05:30 UTC
+Start testing: Oct 14 05:10 UTC
 ----------------------------------------------------------
 1/8 Testing: RunTestsGameLibrary
 1/8 Test: RunTestsGameLibrary
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/game_library"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
-"RunTestsGameLibrary" start time: Oct 11 05:30 UTC
+"RunTestsGameLibrary" start time: Oct 14 05:10 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -12,18 +12,18 @@ Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetc
 [----------] Global test environment set-up.
 [----------] 6 tests from generate_secret_number
 [ RUN      ] generate_secret_number.WithinBounds
-[       OK ] generate_secret_number.WithinBounds (18 ms)
+[       OK ] generate_secret_number.WithinBounds (26 ms)
 [ RUN      ] generate_secret_number.NegativeBounds
-[       OK ] generate_secret_number.NegativeBounds (19 ms)
+[       OK ] generate_secret_number.NegativeBounds (18 ms)
 [ RUN      ] generate_secret_number.EqualBounds
-[       OK ] generate_secret_number.EqualBounds (19 ms)
+[       OK ] generate_secret_number.EqualBounds (20 ms)
 [ RUN      ] generate_secret_number.Randomness
-[       OK ] generate_secret_number.Randomness (19 ms)
+[       OK ] generate_secret_number.Randomness (21 ms)
 [ RUN      ] generate_secret_number.LargeRange
 [       OK ] generate_secret_number.LargeRange (18 ms)
 [ RUN      ] generate_secret_number.BoundaryValues
 [       OK ] generate_secret_number.BoundaryValues (0 ms)
-[----------] 6 tests from generate_secret_number (96 ms total)
+[----------] 6 tests from generate_secret_number (105 ms total)
 
 [----------] 1 test from is_correct_guess
 [ RUN      ] is_correct_guess.CKCorrectGuess
@@ -53,13 +53,13 @@ Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetc
 [----------] 4 tests from get_average_attempts (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 15 tests from 4 test suites ran. (96 ms total)
+[==========] 15 tests from 4 test suites ran. (105 ms total)
 [  PASSED  ] 15 tests.
 <end of output>
-Test time =   0.13 sec
+Test time =   0.14 sec
 ----------------------------------------------------------
 Test Passed.
-"RunTestsGameLibrary" end time: Oct 11 05:30 UTC
+"RunTestsGameLibrary" end time: Oct 14 05:10 UTC
 "RunTestsGameLibrary" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -67,7 +67,7 @@ Test Passed.
 2/8 Test: L2
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/game_library" "--gtest_filter=generate_secret_number"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
-"L2" start time: Oct 11 05:30 UTC
+"L2" start time: Oct 14 05:10 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -79,7 +79,7 @@ Note: Google Test filter = generate_secret_number
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"L2" end time: Oct 11 05:30 UTC
+"L2" end time: Oct 14 05:10 UTC
 "L2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -87,7 +87,7 @@ Test Passed.
 3/8 Test: L3
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/game_library" "--gtest_filter=is_correct_guess"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
-"L3" start time: Oct 11 05:30 UTC
+"L3" start time: Oct 14 05:10 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -99,7 +99,7 @@ Note: Google Test filter = is_correct_guess
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"L3" end time: Oct 11 05:30 UTC
+"L3" end time: Oct 14 05:10 UTC
 "L3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -107,7 +107,7 @@ Test Passed.
 4/8 Test: L4
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/game_library" "--gtest_filter=record_guess_attempt"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
-"L4" start time: Oct 11 05:30 UTC
+"L4" start time: Oct 14 05:10 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -119,7 +119,7 @@ Note: Google Test filter = record_guess_attempt
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"L4" end time: Oct 11 05:30 UTC
+"L4" end time: Oct 14 05:10 UTC
 "L4" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -127,7 +127,7 @@ Test Passed.
 5/8 Test: L5
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/game_library" "--gtest_filter=get_average_attempts"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
-"L5" start time: Oct 11 05:30 UTC
+"L5" start time: Oct 14 05:10 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -139,7 +139,7 @@ Note: Google Test filter = get_average_attempts
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"L5" end time: Oct 11 05:30 UTC
+"L5" end time: Oct 14 05:10 UTC
 "L5" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -147,7 +147,7 @@ Test Passed.
 6/8 Test: RunTestsRandom
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/randomTS"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
-"RunTestsRandom" start time: Oct 11 05:30 UTC
+"RunTestsRandom" start time: Oct 14 05:10 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -171,10 +171,10 @@ Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetc
 [==========] 4 tests from 2 test suites ran. (3 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
-Test time =   0.04 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"RunTestsRandom" end time: Oct 11 05:30 UTC
+"RunTestsRandom" end time: Oct 14 05:10 UTC
 "RunTestsRandom" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -182,7 +182,7 @@ Test Passed.
 7/8 Test: R2
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/randomTS" "--gtest_filter=uniform_int"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
-"R2" start time: Oct 11 05:30 UTC
+"R2" start time: Oct 14 05:10 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -194,7 +194,7 @@ Note: Google Test filter = uniform_int
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"R2" end time: Oct 11 05:30 UTC
+"R2" end time: Oct 14 05:10 UTC
 "R2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -202,7 +202,7 @@ Test Passed.
 8/8 Test: R3
 Command: "/home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build/randomTS" "--gtest_filter=normal"
 Directory: /home/thanhnguyem/project-TryGuessNumber/test/test_game_library/build
-"R3" start time: Oct 11 05:30 UTC
+"R3" start time: Oct 14 05:10 UTC
 Output:
 ----------------------------------------------------------
 Running main() from /home/thanhnguyem/project-TryGuessNumber/test/test_data_fetching/build/googletest/googletest/src/gtest_main.cc
@@ -214,8 +214,8 @@ Note: Google Test filter = normal
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"R3" end time: Oct 11 05:30 UTC
+"R3" end time: Oct 14 05:10 UTC
 "R3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 11 05:30 UTC
+End testing: Oct 14 05:10 UTC

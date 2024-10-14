@@ -6,8 +6,8 @@
 #include "../include/player_data.h"
 
 
-Playerdata::Playerdata(std::string fn, int a, std::string un, std::string gn, int gp, int tg, double aa)
-    : full_name(fn), age(a), username(un), game_name(gn), games_played(gp), total_guesses(tg), average_attempts(aa){}
+Playerdata::Playerdata(std::string fn, int a, std::string un, std::string gn, int gp, int tg, double gr)
+    : full_name(fn), age(a), username(un), game_name(gn), games_played(gp), total_guesses(tg), guess_rate(gr){}
 
 
 std::ostream& operator<<(std::ostream& os, const Playerdata& player) {
@@ -18,25 +18,25 @@ std::ostream& operator<<(std::ostream& os, const Playerdata& player) {
     int game_name_width = std::max(13, static_cast<int>(player.game_name.length()));
     int games_played_width = 15; 
     int total_guesses_width = 15; 
-    int average_attempts_width = 15; 
+    int average_attempts_width = 17; 
     // Display the player information panel
-    os << "+--------------------------------------------------------------------------------------------------------------------+" << std::endl;
+    os << "+-----------------------------------------------------------------------------------------------------------------------+" << std::endl;
     os << "| " << std::setw(name_width) << std::left << "       Full Name"
        << " | " << std::setw(age_width) << std::right << "Age"
        << " | " << std::setw(username_width) << std::left << " Username"
        << " | " << std::setw(game_name_width) << std::left << "  Game Name"
        << " | " << std::setw(games_played_width) << std::right << "Games Played "
        << " | " << std::setw(total_guesses_width) << std::right << "Total Guesses " 
-       << " | " << std::setw(average_attempts_width) << std::right << "Average attempts " << " |" << std::endl;       
-    os << "+--------------------------------------------------------------------------------------------------------------------+" << std::endl;
+       << " | " << std::setw(average_attempts_width) << std::right << "Corect guess rate " << "|" << std::endl;       
+    os << "+-----------------------------------------------------------------------------------------------------------------------+" << std::endl;
     os << "| " << std::setw(name_width) << std::left << player.full_name
        << " | " << std::setw(age_width) << std::right << player.age
        << " | " << std::setw(username_width) << std::left << player.username
        << " | " << std::setw(game_name_width) << std::left << player.game_name
        << " | " << std::setw(games_played_width) << std::right << player.games_played
        << " | " << std::setw(total_guesses_width) << std::right << player.total_guesses 
-       << " | " << std::setw(average_attempts_width) << std::right << player.average_attempts << " |" << std::endl;       
-    os << "+--------------------------------------------------------------------------------------------------------------------+" << std::endl;
+       << " | " << std::setw(average_attempts_width) << std::right << player.guess_rate << " |" << std::endl;       
+    os << "+-----------------------------------------------------------------------------------------------------------------------+" << std::endl;
     return os;
 }
 
@@ -70,21 +70,23 @@ std::string display_menu() {
         std::cout << "2. Crossword Game" << std::endl;
         std::cout << "3. Chess" << std::endl;
         std::cout << "4. Other Option" << std::endl;
-        std::cout << "Enter your choice (1-4): ";
+        std::cout << "5. Exit Game" << std::endl;
+
+        std::cout << "Enter your choice (1-5): ";
         std::cin >> choice;
 
         // Check if input is not a number
         if (std::cin.fail()) {
             std::cin.clear();  
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // Ignore any remaining characters in the buffer
-            std::cout << "Invalid input. Please enter a number between 1 and 4." << std::endl;
+            std::cout << "Invalid input. Please enter a number between 1 and 5." << std::endl;
             continue;
         }
 
         // Ignore newline characters after entering a selection
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-        if (choice >= 1 && choice <= 4) {
+        if (choice >= 1 && choice <= 5) {
             
             switch (choice) {
                 case 1:
@@ -108,12 +110,15 @@ std::string display_menu() {
                     std::cout << "Welcome to " << game_name << std::endl;
                     std::cout << "Please enter your information to start." << std::endl;
                     break;
+                case 5:
+                    std::cout << "Exiting the game. Goodbye!" << std::endl;
+                    exit(0);
             }
         } else {
             // Notify the user to re-enter
-            std::cout << "Invalid choice. Please enter a number between 1 and 4." << std::endl;
+            std::cout << "Invalid choice. Please enter a number between 1 and 5." << std::endl;
         }
-    } while (choice < 1 || choice > 4); // Repeat if selection is invalid
+    } while (choice < 1 || choice > 5); // Repeat if selection is invalid
 
     return game_name;
 }
